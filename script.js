@@ -5,29 +5,27 @@
 
 const cards = document.querySelectorAll(".option-card");
 
-cards.forEach(card => {
+cards.forEach(function(card) {
 
-    card.addEventListener("click", function () {
+    card.addEventListener("click", function() {
 
-        // Remove selected state from all cards
-        cards.forEach(c => c.classList.remove("selected"));
+        // Remove selected state
+        cards.forEach(function(c) {
+            c.classList.remove("selected");
+        });
 
-        // Add selected state to clicked card
+        // Select current card
         card.classList.add("selected");
 
-        // Read material and finish
+        // Read HTML data
         const material = card.dataset.material;
         const finish = card.dataset.finish;
 
         console.log("Material:", material);
         console.log("Finish:", finish);
 
-        // Send the selected material to Sketchfab
-        if (window.changeMaterial) {
-            window.changeMaterial(material, finish);
-        } else {
-            console.error("changeMaterial function is not available.");
-        }
+        // Send selection to Sketchfab
+        changeMaterial(material, finish);
 
     });
 
