@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MillerKnoll Product Configurator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- HEADER -->
+    <!-- ========================================= -->
+
+    <header class="header">
+
+        <h1>MillerKnoll Product Configurator</h1>
+
+    </header>
+
+
+
+    <!-- ========================================= -->
+    <!-- MAIN CONTAINER -->
+    <!-- ========================================= -->
+
+    <div class="container">
+
+
+
+        <!-- ========================================= -->
+        <!-- LEFT PANEL -->
+        <!-- ========================================= -->
+
+        <aside class="sidebar">
+
+
+
+            <!-- ===================== -->
+            <!-- TABLE SURFACE -->
+            <!-- ===================== -->
+
+            <section class="config-section">
+
+                <h2>Table Surface</h2>
+
+                <div class="option-grid">
+
+                    <!-- LBB -->
+
+                    <div class="option-card"
+                        data-material="adskMatWorkSurface_Wood"
+                        data-finish="LBB">
+
+                        <img src="images/table-surface/LBB.jpg">
+
+                        <div class="finish-code">LBB</div>
+
+                        <div class="finish-name">LBB</div>
+
+                    </div>
+
+
+
+                    <!-- LBC -->
+
+                    <div class="option-card"
+                        data-material="adskMatWorkSurface_Wood"
+                        data-finish="LBC">
+
+                        <img src="images/table-surface/LBC.jpg">
+
+                        <div class="finish-code">LBC</div>
+
+                        <div class="finish-name">LBC</div>
+
+                    </div>
+
+
+
+                    <!-- Warm Ash -->
+
+                    <div class="option-card"
+                        data-material="adskMatWorkSurface_Wood"
+                        data-finish="WarmAsh140">
+
+                        <img src="images/table-surface/140 Warm Ash.jpg">
+
+                        <div class="finish-code">140</div>
+
+                        <div class="finish-name">Warm Ash</div>
+
+                    </div>
+
+
+
+                    <!-- Light Ash -->
+
+                    <div class="option-card"
+                        data-material="adskMatWorkSurface_Wood"
+                        data-finish="LightAsh139">
+
+                        <img src="images/table-surface/139 Light Ash.jpg">
+
+                        <div class="finish-code">139</div>
+
+                        <div class="finish-name">Light Ash</div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+            <!-- ===================== -->
+            <!-- UNDERSTRUCTURE -->
+            <!-- ===================== -->
+
+            <section class="config-section">
+
+                <h2>Understructure</h2>
+
+                <div class="option-grid">
+
+                    <!-- White -->
+
+                    <div class="option-card"
+                        data-material="adskMatTableLegs_Metal"
+                        data-finish="White91">
+
+                        <img src="images/table-understructure/91 White.jpg">
+
+                        <div class="finish-code">91</div>
+
+                        <div class="finish-name">White</div>
+
+                    </div>
+
+
+
+                    <!-- G1 -->
+
+                    <div class="option-card"
+                        data-material="adskMatTableLegs_Metal"
+                        data-finish="G1">
+
+                        <img src="images/table-understructure/G1.jpg">
+
+                        <div class="finish-code">G1</div>
+
+                        <div class="finish-name">Graphite</div>
+
+                    </div>
+
+
+
+                    <!-- MS -->
+
+                    <div class="option-card"
+                        data-material="adskMatTableLegs_Metal"
+                        data-finish="MS">
+
+                        <img src="images/table-understructure/MS.jpg">
+
+                        <div class="finish-code">MS</div>
+
+                        <div class="finish-name">Metallic Silver</div>
+
+                    </div>
+
+
+
+                    <!-- CL -->
+
+                    <div class="option-card"
+                        data-material="adskMatTableLegs_Metal"
+                        data-finish="CL">
+
+                        <img src="images/table-understructure/CL.jpg">
+
+                        <div class="finish-code">CL</div>
+
+                        <div class="finish-name">Cool Grey</div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </aside>
+
+
+
+
+
+        <!-- ========================================= -->
+        <!-- RIGHT PANEL -->
+        <!-- ========================================= -->
+
+        <main class="viewer">
+
+            <iframe
+
+                id="api-frame"
+
+                title="Sketchfab Viewer"
+
+                frameborder="0"
+
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+
+                allowfullscreen>
+
+            </iframe>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- Sketchfab API -->
+
+    <script src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
+
+    <script src="viewer.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
