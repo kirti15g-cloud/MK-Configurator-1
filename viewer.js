@@ -8,7 +8,7 @@
 // SKETCHFAB MODEL
 // ======================================================
 
-const MODEL_UID = "be8d658f7bfe4e06bc364b429b6e8ebd";
+const MODEL_UID = "c3c8d73f65324bae8deec5097b9acca2";
 
 const iframe = document.getElementById("api-frame");
 
@@ -19,7 +19,7 @@ const client = new Sketchfab("1.12.1", iframe);
 // TABLE SURFACE TEXTURES
 // ======================================================
 
-const surfaceTextures = {
+const Laminate = {
 
     LBB:
         "https://raw.githubusercontent.com/kirti15g-cloud/MK-Configurator-1/main/images/table-surface/LBB.jpg",
